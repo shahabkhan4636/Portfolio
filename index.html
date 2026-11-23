@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shahab Khan — Software Engineering Student | Portfolio</title>
+<meta name="description" content="Portfolio of Shahab Khan, Software Engineering student from Islamabad, Pakistan. Builder of free web tools.">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI',system-ui,sans-serif; }
+  html { scroll-behavior:smooth; }
+  body { background:#0D1117; color:#E6EDF3; line-height:1.6; }
+  a { color:#00BFFF; text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  nav { position:sticky; top:0; background:rgba(13,17,23,.92); backdrop-filter:blur(8px);
+        border-bottom:1px solid #30363D; padding:14px 24px; display:flex; justify-content:space-between;
+        align-items:center; z-index:10; flex-wrap:wrap; gap:8px; }
+  nav .logo { font-weight:800; font-size:1.15rem; }
+  nav .logo span { color:#00BFFF; }
+  nav .links a { margin-left:18px; color:#E6EDF3; font-size:.95rem; }
+  nav .links a:hover { color:#00BFFF; text-decoration:none; }
+  section { max-width:960px; margin:0 auto; padding:64px 24px; }
+  .hero { text-align:center; padding:90px 24px 60px; }
+  .hero .avatar { width:110px; height:110px; border-radius:50%; background:linear-gradient(135deg,#00BFFF,#A371F7);
+                  display:flex; align-items:center; justify-content:center; font-size:3rem; margin:0 auto 20px;
+                  border:3px solid #30363D; }
+  .hero h1 { font-size:2.6rem; margin-bottom:8px; }
+  .hero h1 span { color:#00BFFF; }
+  .hero .role { color:#8B949E; font-size:1.15rem; margin-bottom:18px; }
+  .hero .typing { color:#3FB950; font-family:'Fira Code',monospace; font-size:1.05rem; min-height:1.6em; }
+  .btn-row { margin-top:26px; display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+  .btn { padding:12px 26px; border-radius:10px; font-weight:700; font-size:.95rem; transition:.15s; }
+  .btn:hover { transform:translateY(-2px); text-decoration:none; }
+  .btn-primary { background:#1F6FEB; color:#fff; }
+  .btn-primary:hover { background:#388BFD; }
+  .btn-ghost { background:#21262D; color:#E6EDF3; border:1px solid #30363D; }
+  .btn-ghost:hover { background:#30363D; }
+  h2 { font-size:1.8rem; margin-bottom:20px; text-align:center; }
+  h2 span { color:#00BFFF; }
+  .about-card { background:#161B22; border:1px solid #30363D; border-radius:14px; padding:26px; }
+  .about-card code { color:#79C0FF; }
+  .skills { display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin-top:18px; }
+  .skill { background:#161B22; border:1px solid #30363D; border-radius:20px; padding:8px 18px; font-size:.9rem; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px; }
+  .card { background:#161B22; border:1px solid #30363D; border-radius:14px; padding:22px; transition:.2s; }
+  .card:hover { border-color:#00BFFF; transform:translateY(-4px); }
+  .card h3 { font-size:1.15rem; margin-bottom:6px; }
+  .card p { color:#8B949E; font-size:.9rem; margin-bottom:14px; }
+  .card .tech { font-size:.78rem; color:#79C0FF; margin-bottom:14px; }
+  .card .links { display:flex; gap:10px; }
+  .card .links a { background:#21262D; border:1px solid #30363D; border-radius:8px;
+                   padding:7px 14px; font-size:.82rem; color:#E6EDF3; }
+  .card .links a:hover { background:#30363D; text-decoration:none; }
+  .contact { text-align:center; }
+  .contact p { color:#8B949E; margin-bottom:20px; }
+  footer { text-align:center; padding:28px 20px; color:#8B949E; font-size:.85rem; border-top:1px solid #30363D; }
+  @media (max-width:600px){ .hero h1{font-size:2rem;} nav .links a{margin-left:10px;} }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Shahab<span>Khan</span>.dev</div>
+  <div class="links">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="avatar">👨‍💻</div>
+  <h1>Hi, I'm <span>Shahab Khan</span> 👋</h1>
+  <p class="role">Software Engineering Student @ Iqra University · Islamabad, Pakistan 🇵🇰</p>
+  <p class="typing" id="typing"></p>
+  <div class="btn-row">
+    <a class="btn btn-primary" href="#projects">🚀 View My Projects</a>
+    <a class="btn btn-ghost" href="https://github.com/shahabkhan4636" target="_blank">🐙 GitHub Profile</a>
+  </div>
+</section>
+
+<section id="about">
+  <h2>👨‍💻 About <span>Me</span></h2>
+  <div class="about-card">
+    <p>I love building <b>free, clean and useful web tools</b> that people actually use every day. My mission is simple: <b>100% original code, no copyright, no payment, no watermark</b> — just helpful software for everyone.</p>
+    <p style="margin-top:12px;">Currently studying <b>Software Engineering</b> and building projects in web development, PWA, APIs, and image/video tools.</p>
+    <p style="margin-top:12px;"><code>"Code should help people — for free."</code></p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>🛠️ My <span>Skills</span></h2>
+  <div class="skills">
+    <span class="skill">🌐 HTML5</span>
+    <span class="skill">🎨 CSS3</span>
+    <span class="skill">⚡ JavaScript</span>
+    <span class="skill">📱 PWA</span>
+    <span class="skill">🔌 REST APIs</span>
+    <span class="skill">🎨 Canvas API</span>
+    <span class="skill">🐙 Git & GitHub</span>
+    <span class="skill">🚀 Netlify</span>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>🚀 Featured <span>Projects</span></h2>
+  <div class="grid">
+    <div class="card">
+      <h3>🔥 ViralTools.pk</h3>
+      <p>13 viral tools in one place — stylish name generator, fancy text, password generator, calculators, QR code & more.</p>
+      <div class="tech">HTML · CSS · JavaScript</div>
+      <div class="links"><a href="https://viraltoolsbyshahab.netlify.app/" target="_blank">▶ Live Demo</a><a href="https://github.com/shahabkhan4636/ViralTools.pk" target="_blank">🐙 Code</a></div>
+    </div>
+    <div class="card">
+      <h3>📈 PakDailyLive.pk</h3>
+      <p>Daily live rates for Pakistan — gold price, USD to PKR, petrol, Namaz times, Qibla compass & Tasbih counter.</p>
+      <div class="tech">JavaScript · Live APIs · PWA</div>
+      <div class="links"><a href="https://pakdailylivepk.netlify.app/" target="_blank">▶ Live Demo</a><a href="https://github.com/shahabkhan4636/PakDailyLive.pk" target="_blank">🐙 Code</a></div>
+    </div>
+    <div class="card">
+      <h3>🖼️ ImageTools.pk</h3>
+      <p>8 free image tools — background remover (no watermark), NADRA passport photo maker, compressor, resizer & more.</p>
+      <div class="tech">Canvas API · jsPDF</div>
+      <div class="links"><a href="https://imagetoolsbyshahab.netlify.app/" target="_blank">▶ Live Demo</a><a href="https://github.com/shahabkhan4636/ImageTools.pk" target="_blank">🐙 Code</a></div>
+    </div>
+    <div class="card">
+      <h3>🎬 VideoDownloader.pk</h3>
+      <p>Free video downloader — TikTok (no watermark), Instagram Reels, Facebook HD, YouTube thumbnails & WhatsApp status.</p>
+      <div class="tech">TikWM API · PWA</div>
+      <div class="links"><a href="https://videodownloaderbyshahab.netlify.app/" target="_blank">▶ Live Demo</a><a href="https://github.com/shahabkhan4636/VideoDownloader.pk" target="_blank">🐙 Code</a></div>
+    </div>
+    <div class="card">
+      <h3>🧮 SmartCalculator.pk</h3>
+      <p>Free scientific calculator — basic + advanced math, keyboard support, safe parser (no eval), works offline.</p>
+      <div class="tech">HTML · CSS · JavaScript</div>
+      <div class="links"><a href="https://shahabkhan4636.github.io/SmartCalculator.pk/" target="_blank">▶ Live Demo</a><a href="https://github.com/shahabkhan4636/SmartCalculator.pk" target="_blank">🐙 Code</a></div>
+    </div>
+    <div class="card">
+      <h3>🐍 SnakeGame.pk</h3>
+      <p>Classic snake game in the browser — keyboard + mobile controls, high scores saved, speed increases as you play.</p>
+      <div class="tech">Canvas · JavaScript</div>
+      <div class="links"><a href="https://shahabkhan4636.github.io/SnakeGame.pk/" target="_blank">▶ Live Demo</a><a href="https://github.com/shahabkhan4636/SnakeGame.pk" target="_blank">🐙 Code</a></div>
+    </div>
+    <div class="card">
+      <h3>🌤️ WeatherApp.pk</h3>
+      <p>Live weather for any city — temperature, humidity, wind & 5-day forecast powered by the free Open-Meteo API.</p>
+      <div class="tech">Fetch API · Open-Meteo</div>
+      <div class="links"><a href="https://shahabkhan4636.github.io/WeatherApp.pk/" target="_blank">▶ Live Demo</a><a href="https://github.com/shahabkhan4636/WeatherApp.pk" target="_blank">🐙 Code</a></div>
+    </div>
+    <div class="card">
+      <h3>✅ TodoApp.pk</h3>
+      <p>Beautiful todo list — add, edit, complete & filter tasks. Saved automatically in your browser with localStorage.</p>
+      <div class="tech">JavaScript · localStorage</div>
+      <div class="links"><a href="https://shahabkhan4636.github.io/TodoApp.pk/" target="_blank">▶ Live Demo</a><a href="https://github.com/shahabkhan4636/TodoApp.pk" target="_blank">🐙 Code</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>📬 Get In <span>Touch</span></h2>
+  <p>Want to collaborate, give feedback, or just say hello? My inbox is always open!</p>
+  <div class="btn-row">
+    <a class="btn btn-primary" href="mailto:shahabkhanprofessional@gmail.com">✉️ Email Me</a>
+    <a class="btn btn-ghost" href="https://github.com/shahabkhan4636" target="_blank">🐙 Follow on GitHub</a>
+  </div>
+</section>
+
+<footer>
+  © 2026 Shahab Khan · Built with ❤️ in Islamabad, Pakistan · <a href="https://github.com/shahabkhan4636/Portfolio" target="_blank">View source on GitHub</a>
+</footer>
+
+<script>
+const lines = [
+  "Building free tools for Pakistan & India 🇵🇰",
+  "100% Original Code | No Copyright | No Payment",
+  "Clean | Fast | Useful | Made with ❤️"
+];
+const el = document.getElementById('typing');
+let li = 0, ci = 0, deleting = false;
+function type(){
+  const line = lines[li];
+  el.textContent = line.slice(0, ci);
+  if(!deleting){
+    if(ci < line.length){ ci++; setTimeout(type, 55); }
+    else { deleting = true; setTimeout(type, 1600); }
+  } else {
+    if(ci > 0){ ci--; setTimeout(type, 25); }
+    else { deleting = false; li = (li+1) % lines.length; setTimeout(type, 400); }
+  }
+}
+type();
+</script>
+</body>
+</html>
